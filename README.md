@@ -12,6 +12,8 @@ This project was created to explore and learn more about accessibility web stand
 
 [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/)
 
+[WAI-ARIA design patterns](https://www.w3.org/WAI/ARIA/apg/)
+
 [Storybook Accessability Addon](https://storybook.js.org/blog/accessibility-testing-with-storybook/)
 
 ### Additional Resources
