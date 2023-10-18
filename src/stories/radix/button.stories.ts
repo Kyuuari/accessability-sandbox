@@ -1,11 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
-
-import { Accessible } from "../components/AccessibleButton";
+import { Button } from "../../components/radix/button";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
-  title: "Accessible/Button",
-  component: Accessible,
+  title: "Radix/Button",
+  component: Button,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
     layout: "centered",
@@ -14,37 +13,28 @@ const meta = {
   tags: ["autodocs"],
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    backgroundColor: { control: "color" },
+    size: { control: "select", options: ["sm", "lg", "default", "icon"] },
+    variant: { control: "select", options: ["link", "default"] },
+    // backgroundColor: { control: "color" },
   },
-} satisfies Meta<typeof Accessible>;
+} satisfies Meta<typeof Button>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
-export const Primary: Story = {
+export const Default: Story = {
   args: {
-    primary: true,
+    variant: "default",
+    size: "default",
     label: "Button",
   },
 };
 
-export const Secondary: Story = {
+export const Link: Story = {
   args: {
-    label: "Button",
-  },
-};
-
-export const Large: Story = {
-  args: {
-    size: "large",
-    label: "Button",
-  },
-};
-
-export const Small: Story = {
-  args: {
-    size: "small",
-    label: "Button",
+    variant: "link",
+    size: "lg",
+    label: "This is a Link",
   },
 };
