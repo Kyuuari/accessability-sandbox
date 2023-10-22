@@ -1,6 +1,6 @@
 // import { Button } from "./components/examples/button/Button";
 
-import { Button } from "./components/radix/button";
+import { Button } from "./components/radix/button/button";
 
 function App() {
   return (
@@ -21,6 +21,13 @@ function App() {
           {/* <div className="h-20 w-20 bg-slate-600" />
           <div className="h-20 w-20 bg-slate-600" />
           <div className="h-20 w-20 bg-slate-600" /> */}
+
+          <div>
+            <img
+              alt="city"
+              src="https://images.unsplash.com/photo-1697442066898-fa88f11693d6?auto=format&fit=crop&q=80&w=2970&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+          </div>
         </div>
       </div>
     </>
